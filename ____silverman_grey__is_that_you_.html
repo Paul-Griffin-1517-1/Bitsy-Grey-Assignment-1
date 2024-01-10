@@ -29,8 +29,9 @@ Your face is so sweet! I see it now!
 
 PAL 0
 248,249,255
-255,4,4
+255,4,8
 0,0,0
+255,0,0
 NAME blueprint
 
 ROOM 0
@@ -47,11 +48,27 @@ ROOM 0
 0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
 0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
 0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,a,0
+a,0,0,a,a,a,a,a,a,a,a,a,a,a,a,0
+a,a,0,a,0,0,0,0,0,0,0,0,0,0,0,0
 NAME example room
 ITM 0 5,4
+ITM 2 5,11
+ITM 2 2,11
+ITM 2 3,13
+ITM 2 2,12
+ITM 2 3,10
+ITM 2 4,10
+ITM 2 5,9
+ITM 2 3,9
+ITM 2 6,11
+ITM 2 4,8
+ITM 2 3,7
+ITM 2 2,14
+ITM 2 2,15
+ITM 0 7,7
+ITM 0 10,5
+ITM 2 6,8
 PAL 0
 TUNE 2
 
@@ -65,6 +82,7 @@ TIL a
 10000001
 11111111
 NAME block
+WAL true
 
 SPR A
 00000100
@@ -84,7 +102,8 @@ SPR A
 00001000
 00000000
 00000000
-POS 0 7,7
+POS 0 8,2
+ITM 2 11
 
 SPR a
 00100100
@@ -118,9 +137,18 @@ SPR b
 01111100
 00000000
 00000000
+>
+00000000
+00000000
+00000000
+01000010
+01000110
+01000100
+01111100
+00000000
 NAME Sink, sink
 DLG 3
-POS 0 0,15
+POS 0 1,14
 
 SPR c
 00000000
@@ -141,7 +169,7 @@ SPR c
 01000010
 10000001
 DLG 4
-POS 0 11,4
+POS 0 12,3
 
 ITM 0
 00000000
@@ -168,6 +196,18 @@ NAME key
 DLG 2
 BLIP 2
 
+ITM 2
+00101100
+01010010
+10011001
+10100101
+10101001
+10001010
+01000001
+00111110
+NAME themaglobin
+COL 4
+
 DLG 0
 """
 {wvy}You seem darker than last time. Have you found it yet? The Red you seek?
@@ -189,18 +229,29 @@ A key! {wvy}What does it open?{wvy}
 NAME key dialog
 
 DLG 3
-{wvy}Sink, sink, we want to sink. Below this sea of the endless ink. The bottom'll be chance to think.{/wvy}
+{wvy}Sink, sink, we want to sink. Below this sea of the endless ink. The bottom'll be chance to think.{/wvy}{pg}...but I'll never make it off the brink....
 NAME Sink, sink dialog
 
 DLG 4
-{clr 0}{rbw}{wvy}{shk}ffflliiicckkkerrrr...{/shk}{/wvy}{/rbw}{/clr}
+{wvy}{shk}ffflliiicckkkerrrr...{/shk}{/wvy}
 NAME sprite c dialog
+
+DLG 5
+ I'm a rock. I'm very important. Look...things are already crowding around me!!
+NAME rock
+
+DLG 6
+(You found meaning.)
+NAME themaglobin dialog
+
+DLG 7
+ We're not as dark as we seem. It's the [censorauthority] at work that makes us seem so. It's bound Lucarn...
 
 VAR a
 42
 
 TUNE 1
-3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
+3d,0,0,0,r,2d5,0,0,3l,0,0,0,3s,0,0,0
 16d2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 >
 4l,0,0,0,s,0,3l,0,0,0,2s,0,2m,0,2r,0
