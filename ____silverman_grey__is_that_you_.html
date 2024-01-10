@@ -6,10 +6,18 @@
 
 <meta charset="UTF-8">
 
-<title>Silverman Grey, is that you? Your face is so sweet! I see it now!</title>
+<title>"""
+Silverman Grey, is that you?
+
+Your face is so sweet! I see it now!
+"""</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
-Silverman Grey, is that you? Your face is so sweet! I see it now!
+"""
+Silverman Grey, is that you?
+
+Your face is so sweet! I see it now!
+"""
 
 # BITSY VERSION 8.9
 
@@ -43,6 +51,7 @@ ROOM 0
 0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME example room
+ITM 0 5,4
 PAL 0
 TUNE 2
 
@@ -95,10 +104,44 @@ SPR a
 00100100
 00111100
 00011000
-NAME cat
+NAME biting arrow
 DLG 0
 POS 0 10,10
 BLIP 1
+
+SPR b
+00000000
+00000000
+00000000
+01000110
+01000110
+01111100
+00000000
+00000000
+NAME Sink, sink
+DLG 3
+POS 0 0,15
+
+SPR c
+00000000
+00000000
+00111100
+01100100
+01100100
+00111100
+00000000
+00000000
+>
+10000001
+01001010
+00010100
+10100101
+01101010
+10010001
+01000010
+10000001
+DLG 4
+POS 0 11,4
 
 ITM 0
 00000000
@@ -126,16 +169,32 @@ DLG 2
 BLIP 2
 
 DLG 0
-I'm a cat
-NAME cat dialog
+"""
+{wvy}You seem darker than last time. Have you found it yet? The Red you seek?
+There were a few if I recall.{/wvy}
+"""
+NAME down arrow dialog
 
 DLG 1
-You found a nice warm cup of tea
+"""
+{shk}I'm a cup of tea. I got left over from the template.
+It's a sad life. I don't think I'll make it down.
+Stuck as Earl Grey. Not even hot.{/shk}
+(You got the Tea.)
+"""
 NAME tea dialog
 
 DLG 2
 A key! {wvy}What does it open?{wvy}
 NAME key dialog
+
+DLG 3
+{wvy}Sink, sink, we want to sink. Below this sea of the endless ink. The bottom'll be chance to think.{/wvy}
+NAME Sink, sink dialog
+
+DLG 4
+{clr 0}{rbw}{wvy}{shk}ffflliiicckkkerrrr...{/shk}{/wvy}{/rbw}{/clr}
+NAME sprite c dialog
 
 VAR a
 42
