@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 
 <!-- HEADER -->
@@ -19,19 +19,20 @@ Silverman Grey, is that you?
 Your face is so sweet! I see it now!
 """
 
-# BITSY VERSION 8.9
+# BITSY VERSION 8.2
 
 ! VER_MAJ 8
-! VER_MIN 9
+! VER_MIN 2
 ! ROOM_FORMAT 1
+! DRAW_FORMAT 1
 ! DLG_COMPAT 0
 ! TXT_MODE 0
 
 PAL 0
-248,249,255
-255,255,8
+255,255,255
 0,0,0
-255,0,0
+0,0,0
+255,4,37
 NAME blueprint
 
 ROOM 0
@@ -73,139 +74,147 @@ PAL 0
 TUNE 2
 
 TIL a
-11111111
-10000001
-10000001
-10011001
-10011001
-10000001
-10000001
-11111111
+1,1,1,1,1,1,1,1
+1,0,0,0,0,0,0,1
+1,0,0,0,0,0,0,1
+1,0,0,1,1,0,0,1
+1,0,0,1,1,0,0,1
+1,0,0,0,0,0,0,1
+1,0,0,0,0,0,0,1
+1,1,1,1,1,1,1,1
 NAME block
 WAL true
+COL 1
 
 SPR A
-00000100
-00000010
-00100100
-00100100
-00000000
-00100100
-01001000
-00100000
+0,0,0,0,0,1,0,0
+0,0,0,0,0,0,1,0
+0,0,1,0,0,1,0,0
+0,0,1,0,0,1,0,0
+0,0,0,0,0,0,0,0
+0,0,1,0,0,1,0,0
+0,1,0,0,1,0,0,0
+0,0,1,0,0,0,0,0
 >
-00000000
-00000000
-00010000
-00111000
-00011100
-00001000
-00000000
-00000000
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,1,0,0,0,0
+0,0,1,1,1,0,0,0
+0,0,0,1,1,1,0,0
+0,0,0,0,1,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
 POS 0 7,2
 ITM 2 11
+COL 2
 
 SPR a
-00100100
-00111100
-00011000
-00011000
-00011000
-00011000
-00011000
-00011000
+0,0,1,0,0,1,0,0
+0,0,1,1,1,1,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,1,0,0,0
 >
-01000010
-01100110
-00100100
-00100100
-00100100
-00100100
-00111100
-00011000
+0,1,0,0,0,0,1,0
+0,1,1,0,0,1,1,0
+0,0,1,0,0,1,0,0
+0,0,1,0,0,1,0,0
+0,0,1,0,0,1,0,0
+0,0,1,0,0,1,0,0
+0,0,1,1,1,1,0,0
+0,0,0,1,1,0,0,0
 NAME biting arrow
 DLG 0
 POS 0 10,10
+COL 2
 BLIP 1
 
 SPR b
-00000000
-00000000
-00000000
-01000110
-01000110
-01111100
-00000000
-00000000
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,1,0,0,0,1,1,0
+0,1,0,0,0,1,1,0
+0,1,1,1,1,1,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
 >
-00000000
-00000000
-00000000
-01000010
-01000110
-01000100
-01111100
-00000000
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,1,0,0,0,0,1,0
+0,1,0,0,0,1,1,0
+0,1,0,0,0,1,0,0
+0,1,1,1,1,1,0,0
+0,0,0,0,0,0,0,0
 NAME Sink, sink
 DLG 3
 POS 0 1,14
+COL 2
 
 SPR c
-00000000
-00000000
-00111100
-01100100
-01100100
-00111100
-00000000
-00000000
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,1,1,1,1,0,0
+0,1,1,0,0,1,0,0
+0,1,1,0,0,1,0,0
+0,0,1,1,1,1,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
 >
-10000001
-01001010
-00010100
-10100101
-01101010
-10010001
-01000010
-10000001
+1,0,0,0,0,0,0,1
+0,1,0,0,1,0,1,0
+0,0,0,1,0,1,0,0
+1,0,1,0,0,1,0,1
+0,1,1,0,1,0,1,0
+1,0,0,1,0,0,0,1
+0,1,0,0,0,0,1,0
+1,0,0,0,0,0,0,1
 DLG 4
 POS 0 12,3
+COL 2
 
 ITM 0
-00000000
-00000000
-00000000
-00111100
-01100100
-00100100
-00011000
-00000000
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,1,1,1,1,0,0
+0,1,1,0,0,1,0,0
+0,0,1,0,0,1,0,0
+0,0,0,1,1,0,0,0
+0,0,0,0,0,0,0,0
 NAME tea
 DLG 1
+COL 2
 
 ITM 1
-00000000
-00111100
-00100100
-00111100
-00010000
-00011000
-00010000
-00011000
+0,0,0,0,0,0,0,0
+0,0,1,1,1,1,0,0
+0,0,1,0,0,1,0,0
+0,0,1,1,1,1,0,0
+0,0,0,1,0,0,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,0,0,0,0
+0,0,0,1,1,0,0,0
 NAME key
 DLG 2
+COL 2
 BLIP 2
 
 ITM 2
-00101100
-01010010
-10011001
-10100101
-10101001
-10001010
-01000001
-00111110
+0,0,3,0,3,3,0,0
+0,3,0,3,0,0,3,0
+3,0,0,3,3,0,0,3
+3,0,3,0,0,3,0,3
+3,0,3,0,3,0,0,3
+3,0,0,0,3,0,3,0
+0,3,0,0,0,0,0,3
+0,0,3,3,3,3,3,0
 NAME themaglobin
+COL 2
 
 DLG 0
 """
@@ -354,11 +363,15 @@ body {
 }
 
 #game {
-	background:black;
-	width:100vw;
-	max-width:100vh;
-	margin:auto;
-	display:block;
+    background: black;
+    width: 100vw;
+    max-width: 100vh;
+    margin: auto;
+    display: block;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 </style>
 
@@ -781,13 +794,35 @@ function GraphicsSystem() {
 	var images = [];
 	var imageFillColors = [];
 
+	function hexToRgb(hex) {
+		// Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+		var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+		hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+			return r + r + g + g + b + b;
+		});
+		return [
+			parseInt(hex.substring(1,3), 16),
+			parseInt(hex.substring(3,5), 16),
+			parseInt(hex.substring(5,7), 16)
+		];
+	}
 	function makeFillStyle(color, isTransparent) {
-		var i = color * 3;
-		if (isTransparent) {
-			return "rgba(" + palette[i + 0] + "," + palette[i + 1] + "," + palette[i + 2] + ", 0)";
-		}
-		else {
-			return "rgb(" + palette[i + 0] + "," + palette[i + 1] + "," + palette[i + 2] + ")";
+		if(typeof color == 'string'){
+			var raw = hexToRgb(color);
+			if (isTransparent) {
+				return "rgba(" + raw[0] + "," + raw[1] + "," + raw[2] + ", 0)";
+			}
+			else {
+				return "rgb(" + raw[0] + "," + raw[1] + "," + raw[2] + ")";
+			}
+		} else {
+			var i = color * 3;
+			if (isTransparent) {
+				return "rgba(" + palette[i + 0] + "," + palette[i + 1] + "," + palette[i + 2] + ", 0)";
+			}
+			else {
+				return "rgb(" + palette[i + 0] + "," + palette[i + 1] + "," + palette[i + 2] + ")";
+			}
 		}
 	}
 
@@ -1192,8 +1227,9 @@ function BitsySystem(name) {
 				var tile = tilePoolStart + i;
 				if (memory.blocks[tile] != undefined && memory.changed[tile]) {
 					bitsyLog("tile changed? " + tile, "system");
+					let sizeTile = Math.sqrt(self._dump()[tile].length);
 					// update tile image
-					graphics.createImage(tile, self.TILE_SIZE, self.TILE_SIZE, self._dump()[tile]);
+					graphics.createImage(tile, sizeTile, sizeTile, self._dump()[tile]);
 				}
 			}
 		}
@@ -1353,7 +1389,7 @@ function BitsySystem(name) {
 			count--;
 		}
 
-		if (count == 0) {
+		if (memory.blocks[next] != undefined) {
 			// couldn't find any available block
 			return null;
 		}
@@ -1395,10 +1431,15 @@ function BitsySystem(name) {
 			memory.blocks[block] = memoryBlock.substring(0, index) + String.fromCharCode(value) + memoryBlock.substring(index + 1);
 		}
 		else {
+			if(typeof(value) === "string"){
+				if(value.charAt(0) === '#'){
+					memoryBlock[index] = value;// hex is just sparkling numbers
+				}
+			}
 			var value = parseInt(value);
 			if (!isNaN(value)) {
 				memoryBlock[index] = value;
-			}
+			} 
 		}
 		memory.changed[block] = true;
 	};
@@ -1543,11 +1584,11 @@ function BitsySystem(name) {
 		}
 	};
 
-	this.tile = function() {
+	this.tile = function(tilesize) {
 		return self._allocate({
 			start: tilePoolStart,
 			max: tilePoolSize,
-			size: (self.TILE_SIZE * self.TILE_SIZE)
+			size: tilesize != undefined? (tilesize * tilesize) : (self.TILE_SIZE * self.TILE_SIZE)
 		});
 	};
 
@@ -1557,15 +1598,6 @@ function BitsySystem(name) {
 		}
 
 		self._free(tile);
-	};
-
-	this.deleteAllTiles = function() {
-		if (tilePoolStart != null) {
-			for (var i = 0; i < tilePoolSize; i++) {
-				var tile = tilePoolStart + i;
-				this.delete(tile);
-			}
-		}
 	};
 
 	this.fill = function(block, value) {
@@ -1680,17 +1712,6 @@ var bitsy = mainProcess.system;
 
 <!-- engine -->
 <script>
-/* BITSY VERSION */
-// is this the right place for this to live?
-var version = {
-	major: 8, // major changes
-	minor: 9, // smaller changes
-	devBuildPhase: "RELEASE",
-};
-function getEngineVersion() {
-	return version.major + "." + version.minor;
-}
-
 /* TEXT CONSTANTS */
 var titleDialogId = "title";
 
@@ -1910,6 +1931,7 @@ function createDefaultFlags() {
 		VER_MIN: -1, // minor version number (-1 = no version information found)
 		// compatibility
 		ROOM_FORMAT: 0, // 0 = non-comma separated (original), 1 = comma separated (default)
+		DRAW_FORMAT: 0, // 0 = non-comma seperated (bitsy), 1 = comma seperated ()
 		DLG_COMPAT: 0, // 0 = default dialog behavior, 1 = pre-7.0 dialog behavior
 		// config
 		TXT_MODE: 0 // 0 = HIREZ (2x - default), 1 = LOREZ (1x)
@@ -2101,28 +2123,6 @@ function createRoomData(id) {
 	};
 }
 
-function createExitData(x, y, destRoom, destX, destY, transition, dlg) {
-	return {
-		x: x,
-		y: y,
-		dest: {
-			room: destRoom,
-			x: destX,
-			y: destY
-		},
-		transition_effect: transition,
-		dlg: dlg,
-	};
-}
-
-function createEndingData(id, x, y) {
-	return {
-		id: id,
-		x: x,
-		y: y
-	};
-}
-
 function parseRoom(parseState, world) {
 	var i = parseState.index;
 	var lines = parseState.lines;
@@ -2214,14 +2214,17 @@ function parseRoom(parseState, world) {
 			var exitCoords = exitArgs[1].split(",");
 			var destName = exitArgs[2];
 			var destCoords = exitArgs[3].split(",");
-			var ext = createExitData(
-				/* x 			*/ parseInt(exitCoords[0]),
-				/* y 			*/ parseInt(exitCoords[1]),
-				/* destRoom 	*/ destName,
-				/* destX 		*/ parseInt(destCoords[0]),
-				/* destY 		*/ parseInt(destCoords[1]),
-				/* transition 	*/ null,
-				/* dlg 			*/ null);
+			var ext = {
+				x : parseInt(exitCoords[0]),
+				y : parseInt(exitCoords[1]),
+				dest : {
+					room : destName,
+					x : parseInt(destCoords[0]),
+					y : parseInt(destCoords[1])
+				},
+				transition_effect : null,
+				dlg: null,
+			};
 
 			// optional arguments
 			var exitArgIndex = 4;
@@ -2246,10 +2249,11 @@ function parseRoom(parseState, world) {
 			var endId = getId(lines[i]);
 
 			var endCoords = getCoord(lines[i], 2);
-			var end = createEndingData(
-				/* id */ endId,
-				/* x */ parseInt(endCoords[0]),
-				/* y */ parseInt(endCoords[1]));
+			var end = {
+				id : endId,
+				x : parseInt(endCoords[0]),
+				y : parseInt(endCoords[1])
+			};
 
 			roomData.endings.push(end);
 		}
@@ -2296,6 +2300,9 @@ function parseTile(parseState, world) {
 	while (i < lines.length && lines[i].length > 0) { // look for empty line
 		if (getType(lines[i]) === "COL") {
 			tileData.col = parseInt(getId(lines[i]));
+            if (isNaN(tileData.col)) {
+                tileData.col = getId(lines[i]);
+            }
 		}
 		else if (getType(lines[i]) === "BGC") {
 			var bgcId = getId(lines[i]);
@@ -2354,6 +2361,9 @@ function parseSprite(parseState, world) {
 		if (getType(lines[i]) === "COL") {
 			/* COLOR OFFSET INDEX */
 			spriteData.col = parseInt(getId(lines[i]));
+            if (isNaN(spriteData.col)) {
+                spriteData.col = getId(lines[i]);
+            }
 		}
 		else if (getType(lines[i]) === "BGC") {
 			/* BACKGROUND COLOR */
@@ -2425,6 +2435,9 @@ function parseItem(parseState, world) {
 		if (getType(lines[i]) === "COL") {
 			/* COLOR OFFSET INDEX */
 			itemData.col = parseInt(getArg(lines[i], 1));
+            if (isNaN(itemData.col)) {
+                itemData.col = getId(lines[i]);
+            }
 		}
 		else if (getType(lines[i]) === "BGC") {
 			/* BACKGROUND COLOR */
@@ -2463,18 +2476,30 @@ function parseDrawingCore(lines, i, drwId, world) {
 	frameList.push( [] ); //init first frame
 	var frameIndex = 0;
 	var y = 0;
-	while (y < bitsy.TILE_SIZE) {
+	
+	var drawingSize = 0;
+    while (!isNaN(parseInt(lines[i+drawingSize].charAt(0)))) {
+        drawingSize++;
+    }
+    
+    
+	while (y < drawingSize) {
 		var line = lines[i + y];
+    	if (world.flags.DRAW_FORMAT == 1) {
+    		line = line.split(",") || '';
+    	}
 		var row = [];
-
-		for (x = 0; x < bitsy.TILE_SIZE; x++) {
-			row.push(parseInt(line.charAt(x)));
+		
+		for (x = 0; x < drawingSize; x++) {
+			let parsedPixel = parseInt(line[x]);
+            parsedPixel = isNaN(parsedPixel) ? 0 : parsedPixel;
+            row.push(parsedPixel);
 		}
 
 		frameList[frameIndex].push(row);
 		y++;
 
-		if (y === bitsy.TILE_SIZE) {
+		if (y === drawingSize) {
 			i = i + y;
 			if (lines[i] != undefined && lines[i].charAt(0) === ">") {
 				// start next frame!
@@ -3330,18 +3355,6 @@ function SoundPlayer() {
 		if (curTune.arpeggioPattern != ArpeggioPattern.OFF && curTune.key != null) {
 			curArpeggio = arpeggiateBar(curTune.harmony[barIndex], curTune.key, curTune.arpeggioPattern);
 		}
-	};
-
-	this.isTunePlaying = function() {
-		return curTune != null;
-	};
-
-	this.getCurTuneId = function() {
-		if (curTune) {
-			return curTune.id;
-		}
-
-		return null;
 	};
 
 	this.stopTune = function() {
@@ -4760,7 +4773,6 @@ function endFunc(environment,parameters,onReturn) {
 	isEnding = true;
 	isNarrating = true;
 	dialogRenderer.SetCentered(true);
-	dialogRenderer.DrawTextbox();
 	onReturn(null);
 }
 
@@ -7384,7 +7396,7 @@ var DialogBuffer = function() {
 
 	// TODO : convert this into something that takes DialogChar arrays
 	this.AddText = function(textStr) {
-		bitsy.log("ADD TEXT >>" + textStr + "<<");
+		bitsy.log("ADD TEXT " + textStr);
 
 		//process dialog so it's easier to display
 		var words = textStr.split(" ");
@@ -7492,17 +7504,12 @@ var DialogBuffer = function() {
 		var curRowArr = buffer[curPageIndex][curRowIndex];
 
 		// need to actually create a whole new page if following another pagebreak character
-		if (afterManualPagebreak) {
-			this.FlipPage(); // hacky
-
-			buffer[curPageIndex][curRowIndex] = curRowArr;
+		if (this.CurChar() && this.CurChar().isPageBreak) {
 			buffer.push([]);
 			curPageIndex++;
 			buffer[curPageIndex].push([]);
 			curRowIndex = 0;
 			curRowArr = buffer[curPageIndex][curRowIndex];
-
-			afterManualPagebreak = false;
 		}
 
 		var pagebreakChar = new DialogPageBreakChar();
@@ -7510,7 +7517,7 @@ var DialogBuffer = function() {
 
 		curRowArr.push(pagebreakChar);
 
-		isActive = true;
+		isActive = true;		
 	}
 
 	this.hasTextEffect = function(name) {
@@ -7818,18 +7825,26 @@ function renderDrawing(drawing) {
 }
 
 function renderTileFromDrawingData(drawingData, col, bgc) {
-	var tileId = bitsy.tile();
+    var tilesize = drawingData.length;
+	var tileId = bitsy.tile(tilesize);
+    var scale = Math.ceil(4 / (tilesize / 8));
 
 	var backgroundColor = tileColorStartIndex + bgc;
 	var foregroundColor = tileColorStartIndex + col;
+    if(typeof(col) === "string") {
+        foregroundColor = col;
+    }
 
 	bitsy.fill(tileId, backgroundColor);
 
-	for (var y = 0; y < bitsy.TILE_SIZE; y++) {
-		for (var x = 0; x < bitsy.TILE_SIZE; x++) {
+	for (var y = 0; y < tilesize; y++) {
+		for (var x = 0; x < tilesize; x++) {
 			var px = drawingData[y][x];
 			if (px === 1) {
-				bitsy.set(tileId, (y * bitsy.TILE_SIZE) + x, foregroundColor);
+				bitsy.set(tileId, (y * tilesize) + x, foregroundColor);
+			}
+			else {
+				bitsy.set(tileId, (y * tilesize) + x, tileColorStartIndex+px);
 			}
 		}
 	}
@@ -7917,7 +7932,12 @@ this.GetFrameCount = function(drawingId) {
 // todo : forceReset option is hacky?
 this.ClearCache = function(forceReset) {
 	if (forceReset === undefined || forceReset === true) {
-		bitsy.deleteAllTiles();
+		for (var cacheId in drawingCache.render) {
+			var tiles = drawingCache.render[cacheId];
+			for (var i = 0; i < tiles.length; i++) {
+				bitsy.delete(tiles[i]);
+			}
+		}
 	}
 
 	drawingCache.render = {};
@@ -7993,8 +8013,6 @@ function resetGameState() {
 	state.ava = playerId; // avatar appearance override
 	state.pal = "0"; // current palette id
 	state.tune = "0"; // current tune id ("0" === off)
-	state.exits = []; // exits in current room
-	state.endings = []; // endings in current room
 }
 
 // title helper functions
@@ -8003,6 +8021,16 @@ function getTitle() {
 }
 function setTitle(titleSrc) {
 	dialog[titleDialogId] = { src:titleSrc, name:null };
+}
+
+/* VERSION */
+var version = {
+	major: 8, // major changes
+	minor: 2, // smaller changes
+	devBuildPhase: "RELEASE",
+};
+function getEngineVersion() {
+	return version.major + "." + version.minor;
 }
 
 /* FLAGS */
@@ -8707,31 +8735,12 @@ function initRoom(roomId) {
 	}
 
 	// init exit properties
-	state.exits = [];
 	for (var i = 0; i < room[roomId].exits.length; i++) {
-		var exit = createExitData(
-			/* x 			*/ room[roomId].exits[i].x,
-			/* y 			*/ room[roomId].exits[i].y,
-			/* destRoom 	*/ room[roomId].exits[i].dest.room,
-			/* destX 		*/ room[roomId].exits[i].dest.x,
-			/* destY 		*/ room[roomId].exits[i].dest.y,
-			/* transition 	*/ room[roomId].exits[i].transition_effect,
-			/* dlg 			*/ room[roomId].exits[i].dlg);
-		exit.property = { locked: false };
-
-		state.exits.push(exit);
+		room[roomId].exits[i].property = { locked:false };
 	}
-
 	// init ending properties
-	state.endings = [];
 	for (var i = 0; i < room[roomId].endings.length; i++) {
-		var end = createEndingData(
-			/* id */ room[roomId].endings[i].id,
-			/* x  */ room[roomId].endings[i].x,
-			/* y  */ room[roomId].endings[i].y);
-		end.property = { locked: false };
-
-		state.endings.push(end);
+		room[roomId].endings[i].property = { locked:false };
 	}
 
 	if (soundPlayer) {
@@ -8826,10 +8835,9 @@ function getItem(roomId,x,y) {
 	return null;
 }
 
-// todo : roomId isn't useful in these functions anymore! safe to remove?
-function getExit(roomId, x, y) {
-	for (i in state.exits) {
-		var e = state.exits[i];
+function getExit(roomId,x,y) {
+	for (i in room[roomId].exits) {
+		var e = room[roomId].exits[i];
 		if (x == e.x && y == e.y) {
 			return e;
 		}
@@ -8837,9 +8845,9 @@ function getExit(roomId, x, y) {
 	return null;
 }
 
-function getEnding(roomId, x, y) {
-	for (i in state.endings) {
-		var e = state.endings[i];
+function getEnding(roomId,x,y) {
+	for (i in room[roomId].endings) {
+		var e = room[roomId].endings[i];
 		if (x == e.x && y == e.y) {
 			return e;
 		}
@@ -9072,7 +9080,7 @@ function serializeWorld(skipFonts) {
 			/* WALL */
 			worldStr += "WAL " + tile[id].isWall + "\n";
 		}
-		if (tile[id].col != null && tile[id].col != undefined && tile[id].col != 1) {
+		if (tile[id].col != null && tile[id].col != undefined) {
 			/* COLOR OVERRIDE */
 			worldStr += "COL " + tile[id].col + "\n";
 		}
@@ -9108,7 +9116,7 @@ function serializeWorld(skipFonts) {
 				worldStr += "ITM " + itemId + " " + sprite[id].inventory[itemId] + "\n";
 			}
 		}
-		if (sprite[id].col != null && sprite[id].col != undefined && sprite[id].col != 2) {
+		if (sprite[id].col != null && sprite[id].col != undefined) {
 			/* COLOR OVERRIDE */
 			worldStr += "COL " + sprite[id].col + "\n";
 		}
@@ -9139,7 +9147,7 @@ function serializeWorld(skipFonts) {
 		if (item[id].dlg != null) {
 			worldStr += "DLG " + item[id].dlg + "\n";
 		}
-		if (item[id].col != null && item[id].col != undefined && item[id].col != 2) {
+		if (item[id].col != null && item[id].col != undefined) {
 			/* COLOR OVERRIDE */
 			worldStr += "COL " + item[id].col + "\n";
 		}
@@ -9419,8 +9427,9 @@ function serializeDrawing(drwId) {
 	for (f in drawingData) {
 		for (y in drawingData[f]) {
 			var rowStr = "";
-			for (x in drawingData[f][y]) {
-				rowStr += drawingData[f][y][x];
+            for (x in drawingData[f][y]) {
+                rowStr += drawingData[f][y][x];
+                if (x < drawingData[f][y].length - 1) rowStr += ","
 			}
 			drwStr += rowStr + "\n";
 		}
@@ -9713,9 +9722,7 @@ function startEndingDialog(ending) {
 		endingDialogStr = end[ending.id].src;
 	}
 
-	var tmpTuneId = null;
 	if (isEnding && soundPlayer) {
-		tmpTuneId = soundPlayer.getCurTuneId();
 		soundPlayer.stopTune();
 	}
 
@@ -9726,12 +9733,6 @@ function startEndingDialog(ending) {
 			var isLocked = ending.property && ending.property.locked === true;
 			if (isLocked) {
 				isEnding = false;
-
-				// if the ending was cancelled, restart the music
-				// todo : should it resume from where it started? (right now it starts over)
-				if (tmpTuneId && soundPlayer && !soundPlayer.isTunePlaying()) {
-					soundPlayer.playTune(tune[tmpTuneId]);
-				}
 			}
 		},
 		ending);
@@ -12075,6 +12076,7 @@ CHAR 9835
 011011
 011000
 000000
+</script>
 </script>
 
 </head>
