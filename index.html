@@ -50,7 +50,7 @@ a,a,0,0,0,0,0,0,0,0,0,0,0,0,a,a
 a,a,0,0,0,0,0,0,0,0,0,0,0,0,a,a
 a,a,0,0,0,0,0,0,0,0,0,0,0,0,a,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,a,a
-a,0,0,a,a,a,a,a,a,a,a,a,e,a,a,a
+a,0,0,a,a,a,a,a,a,a,a,a,a,a,a,a
 a,a,0,a,a,a,a,a,a,a,a,a,a,a,a,a
 NAME example room
 ITM 2 5,11
@@ -370,6 +370,117 @@ POS 1 3,14
 COL 2
 BLIP 2
 
+SPR f
+0,0,0,1,1,1,1,1
+0,0,1,0,0,0,0,1
+0,0,0,1,0,0,1,1
+0,0,1,0,0,0,0,1
+0,0,1,0,0,0,0,1
+0,0,1,0,0,0,0,1
+0,0,1,0,1,0,1,1
+0,0,0,1,1,1,1,0
+>
+0,0,0,1,1,1,1,1
+0,0,1,0,0,0,0,1
+0,0,1,0,0,0,0,1
+0,0,0,1,0,0,1,1
+0,0,1,0,0,0,0,1
+0,0,1,0,0,0,0,1
+0,0,1,0,0,1,0,1
+0,0,0,1,1,1,1,0
+NAME mirror
+DLG g
+POS 0 12,12
+COL 2
+
+SPR g
+0,0,1,0,0,0,0,0
+0,1,1,1,0,1,1,0
+0,1,0,1,0,1,1,0
+0,1,0,1,1,0,1,0
+0,1,1,1,1,1,1,0
+0,1,0,1,1,0,1,0
+1,1,0,0,0,0,1,0
+1,0,0,1,1,0,0,1
+>
+0,0,0,0,0,0,0,0
+0,0,1,0,0,0,0,0
+0,1,1,1,0,1,1,0
+0,1,0,1,0,1,1,0
+0,1,0,1,1,0,1,0
+0,1,1,1,1,1,1,0
+1,1,0,1,1,0,1,0
+1,0,0,1,1,0,0,1
+DLG h
+POS 1 10,12
+COL 2
+
+SPR h
+1,0,0,1,1,1,0,0
+1,1,0,1,1,1,0,0
+0,1,1,1,1,1,0,0
+0,0,1,1,0,0,0,0
+0,0,0,1,1,1,0,0
+0,0,0,1,0,1,1,1
+0,0,0,0,1,1,0,0
+0,0,0,0,0,1,1,1
+>
+1,0,0,1,1,1,0,0
+1,0,0,1,1,1,0,0
+1,1,1,1,1,1,0,0
+0,1,1,1,0,0,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,1,1,0,0
+0,0,0,0,1,1,1,0
+0,0,0,0,1,1,1,1
+DLG i
+POS 3 3,2
+COL 2
+
+SPR i
+0,0,0,0,1,1,1,0
+1,1,0,1,0,0,0,1
+0,1,0,1,1,0,1,1
+0,1,0,1,0,1,0,1
+0,1,0,0,1,1,1,0
+0,1,1,1,1,1,1,0
+1,1,0,0,0,0,1,1
+1,1,0,0,0,0,1,1
+>
+0,0,0,0,1,1,1,0
+1,1,0,1,1,0,1,1
+0,1,0,1,0,1,0,1
+0,1,0,1,0,0,0,1
+0,1,0,0,1,1,1,0
+0,1,1,1,1,1,1,0
+1,1,0,0,0,0,1,1
+1,1,0,0,0,0,1,1
+NAME scootergirl
+POS 3 13,1
+COL 2
+
+SPR j
+1,0,0,0,0,0,0,0
+1,1,0,0,0,0,0,1
+0,1,1,0,0,0,1,1
+0,0,1,1,0,1,0,0
+0,0,0,1,1,0,0,0
+0,0,1,1,1,1,0,0
+0,1,0,0,0,1,1,0
+1,1,0,0,0,0,1,1
+>
+1,0,0,0,0,0,0,1
+1,1,1,0,0,1,1,1
+0,0,1,1,0,1,0,0
+0,0,0,1,1,0,0,0
+0,0,0,1,1,1,0,0
+0,1,1,0,0,1,0,0
+0,1,0,0,0,0,1,0
+1,0,0,0,0,0,0,1
+DLG k
+POS 1 9,5
+COL 2
+
 ITM 0
 0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0
@@ -447,8 +558,8 @@ COL 2
 
 DLG 0
 """
-{wvy}You seem darker than last time. Have you found it yet? The Red you seek?
-There were a few if I recall.{/wvy}
+{wvy}You seem darker than last time. Have you found it yet? The {clr 3}Red {/clr}you seek?
+There were a few if I recall. Are you following it{/wvy}
 """
 NAME down arrow dialog
 
@@ -485,7 +596,7 @@ DLG 7
  We're not as dark as we seem. It's the [censorauthority] at work that makes us seem so. It's bound Lucarn...
 
 DLG 8
-{wvy}Breathing... breathings... I've never actually smelled anything before. I wish I could, sometime.{/wvy}
+{wvy}Breathing... breathings... I've never actuallys smelled anything befores. I wish I coulds, sometime.{/wvy}
 NAME sprite d dialog
 
 DLG 9
@@ -498,7 +609,7 @@ NAME exit narration 2
 
 DLG b
 """
-{clr 3}Have you ever wondered what your blood was doing before it was in your body?
+{clr 3}Have you ever wondered what your {clr 3}blood {/clr}was doing before it was in your body?
 
 Apparently, just this. Floating in the endless, bottomless, fascinating expanse of the GREY.{/clr}
 """
@@ -521,8 +632,41 @@ DLG e
 NAME exit narration 3
 
 DLG f
- Down and down you go. Into madness only I know. It's not as dark as it seems, for Authority fills what it deems. But at the end of the day, this is all grey. What does it matter either way?
+ Down and down you go. Into madness only I know. It's not as dark as it seems, for a Maker shades as he deems. But at the end of the day, this is all grey. So, what does it matter either way?
 NAME final end
+
+DLG g
+{wvy}I am, a mirror, and, what do I see? A strange, fuzzing face is, staring from me. That's, you, Silverman Grey, who shivers, all day... Just give up. There's, no point. Just don't go, that, way...{/wvy}
+NAME mirror
+
+DLG h
+"""
+Oh, hello. You've been collecting the Red? Well, that's nice. It's not like it does anything. But at least it gave you a semblance of {clr 3}meaning{/clr}. Didn't it?{pg}...just because it doesn't lead anywhere, doesn't mean it was meaningless. It gave YOU some life.
+I guess there's less for the rest of us, now, too... it was nice to look at. To pretend, for a while.
+"""
+NAME sprite g dialog
+
+DLG i
+"""
+I'm clutching the brink, Silverman.
+I want to stay here, Silverman! To stay in the GREY! If I become BLACK, I'll hurt for real! And I can't go back to the WHITE!
+
+I still can {clr 3}matter{/clr}, here! I believe it! {wvy}PLEASE!!{/wvy}
+"""
+NAME become real
+
+DLG j
+"""
+This place is the place worlds live before they become real.
+We all got left behind. And the story moved on without us. Down there. In the BLACK.
+But we were still made. So...we just live here now. In the GREY.
+So I'll always save the day. The one that I have.
+"""
+NAME left behind
+
+DLG k
+{shk} Do you hear the whine of suffering? The looping song. It's driving me crazy.{/shk}
+NAME song of suffering
 
 VAR a
 42
